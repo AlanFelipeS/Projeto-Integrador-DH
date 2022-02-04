@@ -4,7 +4,7 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-    color: slategray;
+   
   }
   
   
@@ -17,6 +17,8 @@ body {
     max-height: 100px;
     flex-shrink: 1;
     box-shadow: 0 1px 8px -4px black;
+    background-color: black;
+  
   }
 
   header img{
@@ -37,7 +39,7 @@ body {
   }
   header nav a {
     text-decoration: none;
-    color: rgb(55, 58, 60); ;
+    color: rgb(240, 252, 6);
     display: block;
     padding: 1rem;
     font-size: .8rem;
@@ -68,8 +70,8 @@ body {
 
   .barra{
     width: 70px;
-    height: 7px;
-    border: 2px solid rgb(167, 157, 157);
+    height: 4px;
+    border: 2px solid rgb(255, 255, 255);
     margin: 6px;
     border-radius: 10px;
     cursor: pointer;
@@ -89,6 +91,9 @@ body {
     display: flex;
     width: 500%;
     height: 100%;
+    animation-name: animacao;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
   }
 
   .slide{
