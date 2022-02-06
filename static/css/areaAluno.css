@@ -66,10 +66,14 @@ html,body{
     display: flex;
     color: #e4e4e4;
     opacity: .7;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-decoration: none;
     margin-bottom: 0.5rem;
     padding: 0.5rem;
+}
+.menu ul li a i{
+    margin-top: 0.3rem;
+    margin-right: 0.5rem;
 }
 .container{
     position: absolute;
