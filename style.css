@@ -1,0 +1,65 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: linear-gradient(to right, rgb(220, 20, 47), rgb(17, 54, 71))
+}
+
+
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card{
+    background-color:linear-gradient(to right, rgb(220, 20, 47), rgb(17, 54, 71));
+    padding: 20px;
+    border-radius: 1px;
+    width: 250px;
+}
+.card header{
+    padding-bottom: 50px;
+    color: white;
+}
+
+.card header ::after{
+    content: "";
+    width: 70px;
+    height: 1px;
+    background-color: white;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.card-content label{
+color: white;
+font-size: 15px;
+cursor: pointer;
+}
+
+.card-content-area{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+}
+.card-content-input{
+    margin-top: 10px;
+    font-size: 8rem;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+
+}
+   
+
+.card-footer{
+    display: flex;
+    flex-direction: column;
+}
