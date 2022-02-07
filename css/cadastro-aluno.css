@@ -87,8 +87,9 @@ fieldset.grupo .campo{
     top: 90%;
     left: 50%;
     margin-right: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 20px;
+    transform: translate(-50%, 60%);
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .botao:hover{
