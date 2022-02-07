@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+   
+  }
+  
+  
+  header {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    max-height: 100px;
+    flex-shrink: 1;
+    box-shadow: 0 1px 8px -4px black;
+    background: linear-gradient(to right, rgb(116, 26, 26), rgb(17, 54, 71));
+  
+  }
+
+  header img{
+    display: flex;
+    width: 200px;
+    justify-content: stretch;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+  }
+  header nav ul {
+    display: flex;
+    flex-flow: row;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  header nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1rem;
+    font-size: .8rem;
+    font-weight: bold;
+    margin: 3rem;
+  }
+
+  .content{
+    display: block;
+    align-items: center;
+    height: 555px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+    animation-name: animacao;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+  }
+
+  .slide{
+    width: 20%;
+    transition: .6s;
+  }
+
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+
+ 
+  .footer.footer{
+    height: 100%;
+    background: linear-gradient(to right, rgb(116, 26, 26), rgb(17, 54, 71));
+    position: relative;
+  }
+  
+  .newsletter h6{
+    color: white;
+    padding: auto;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter .newsletter-email{
+    border-radius: 30px;
+    background-color: white
+  }
+
+  .newsletter .newsletter-button{
+    border-radius: 50px;
+  }
+
+  .contato{
+    margin-left: 45px;
+  }
+
+  .footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem 0.9rem;
+  }
+
+  .footer h2{
+    color: white;
+  }
+
+  .footer p{
+    font-size: 15px;
+    color: aliceblue;
+  }
+
+  .footer .sobre-nos{
+    margin-left: 30px;
+  }
+
+  .redes-sociais h2{
+    margin-left: 20px;
+  }
+ 
+  .redes-sociais .fa-facebook-f{
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0px 2px 0;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .redes-sociais .fa-facebook-f:hover{
+    color: rgb(116, 26, 26);
+    transform: translateY(-9px);
+  }
+
+  .redes-sociais .fa-instagram{
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0px 2px 0;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .redes-sociais .fa-instagram:hover{
+    color: rgb(116, 26, 26);
+    transform: translateY(-9px);
+  }
+
+  .redes-sociais .fa-youtube{
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0px 2px 0;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .redes-sociais .fa-youtube:hover{
+    color: rgb(116, 26, 26);
+    transform: translateY(-9px);
+  }
+
+  .redes-sociais .fa-tiktok{
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0px 2px 0;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .redes-sociais .fa-tiktok:hover{
+    color: rgb(116, 26, 26);
+    transform: translateY(-9px);
+  }
+
+  .redes-sociais .fa-spotify{
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0px 2px 0;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .redes-sociais .fa-spotify:hover{
+    color: rgb(116, 26, 26);
+    transform: translateY(-9px);
+  }
+
+  
+
+
+
+  .texto-copy{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  

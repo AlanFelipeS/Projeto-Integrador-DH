@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 
 <html lang="pt-br">
 
@@ -43,4 +44,120 @@
             </form>
         </div>
     </body>
+=======
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Aluno</title>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-image: linear-gradient(to right, rgb(220, 20, 47), rgb(17, 54, 71));
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 45px;
+            border-radius: 40px;
+            width: 20%;
+            color: white;
+        }
+        fieldset{
+            border: 3px solid darkred;
+        }
+        legend{
+            border: 1px solid darkred;
+            padding: 10px;
+            text-align: center;
+            background-color: darkred;
+            border-radius: 8px;
+        }
+        .inputData{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 11px;
+            color: darkred;
+        }
+        #submit{
+            background-image: linear-gradient(to right, rgb(59, 4, 7)rgba(0, 0, 155, .6));
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: black;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        #submit :hover{
+            background-image: linear-gradient(to right, rgb(156, 23, 36)rgba(0, 0, 100, 0));
+        }
+        #reset{
+            background-image: linear-gradient(to right, rgb(59, 4, 7)rgba(0, 0, 155, .6));
+            width: 100%;
+            border: none;
+            padding: 10px;
+            color: black;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #reset :hover{
+            background-image: linear-gradient(to right, rgb(156, 23, 36)rgba(0, 0, 100, 0));
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend> <b>Login Mohave</b></legend>
+                <br>
+                <div class="inputData">
+                    <input type="text" name="Nome" id="nome" class="inputUser" required>
+                    <label for="Nome" class="labelInput">Usuário</label>
+                </div>
+                <br>
+                <div class="inputData">
+                    <input type="password" name="Senha" id="senha" class="inputUser" required>
+                    <label for="senha" class="labelInput">Senha</label>
+
+                </div>
+                <br>
+                <input type="submit" name="submit" id="submit">
+                <br><br>
+                <input type="reset" name="reset" id="reset">
+                <br>
+            </fieldset>
+
+        </form>
+
+    </div>
+    
+</body>
+>>>>>>> origin/Alan
 </html>
