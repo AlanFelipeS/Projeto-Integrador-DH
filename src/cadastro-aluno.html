@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="/css/cadastro-aluno.css" media="">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de aluno</h1>
+        <p id="subtitulo">Complete as informações abaixo:</p>
+    </div>
+    <form>
+        <fieldset class="grupo"></fieldset>
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label for="objetivo">Qual seu objetivo ao se tornar aluno da Mohave?</label>
+            <label>
+                <input type="radio" name="peso" value="peso" checked> Perder Peso 
+            </label>
+            <label>
+                <input type="radio" name="peso" value="massa" checked> Ganhar resistência
+            </label>
+            <label>
+                <input type="radio" name="peso" value="autoestima" checked> Autoestima
+            </label>
+            <label>
+                <input type="radio" name="peso" value="mente" checked> Saúde mental
+            </label>
+        </div>
+        <div class="campo">
+            <label>Perfil de usuário</label>
+            <select id="tipo">
+            <option selected disabled value="">Selecione seu perfil de treino</option>
+            <option>Iniciante - 1 a 2 treinos por semana</option>
+            <option>Intermediário - 3 a 5 treinos por semana</option>
+            <option>Atleta semi-profissional - treino todos os dias da semana</option>
+            </select>
+        </div>
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong></strong>Selecione as modalidades de seu interesse</label><br>
+                <input type="checkbox" id="musculacao" name="musculacao" value="musculacao">
+                <label for="musculacao">Musculação</label>
+                <input type="checkbox" id="crossfit" name="crossfit" value="crossfit">
+                <label for="crossfit">Crossfit</label>
+                <input type="checkbox" id="ginastica" name="ginastica" value="ginastica">
+                <label for="ginastica">Ginástica</label>
+                <input type="checkbox" id="luta" name="luta" value="luta">
+                <label for="luta">Luta</label>
+                <input type="checkbox" id="natacao" name="natacao" value="natacao">
+                <label for="crosfit">Natação</label>
+                <input type="checkbox" id="pilates" name="pilates" value="pilates">
+                <label for="pilates">Pilates</label>
+                
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label for="">Conte um pouco sobre seus treinos, e como podemos te ajudar a melhorar sua saúde! </label>
+            <textarea name="experiencia" id="" cols="20" rows="5" style="width: 26em"></textarea>
+        </div>
+       
+      <button class="botao" type="submit">Enviar</button>
+
+        
+    </form>
+</body>
+</html>
