@@ -74,7 +74,111 @@ body {
     height: 100%;
   }
 
- 
+h2 {
+   text-align: center;
+   
+}
+
+
+/*
+.servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 650px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+.servicos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+*/
+
+.container-servicos{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+  align-content:center;
+  gap: 2rem;
+  margin: 3rem;
+  margin-left: 0;
+}
+
+.box{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.box p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagens{
+  width: 200px;
+}
+
+.botao {
+  color: #ffffff;
+  padding: 10px 30px;
+  background: linear-gradient(to right, rgb(116, 26, 26), rgb(17, 54, 71));
+  border-radius: 10px;
+  margin-bottom: 35px;
+}
+
+.botao a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 10px 45px;
+
+}
+
+
+@media screen and (min-width: 800px) {
+
+    .servicos {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            max-width: 1000px;
+            margin: 0 auto;
+    }
+
+}
+
+    .servicos h2 {
+            text-align: center;
+            width: 100%;
+
+    }
+
+    .servicos div {
+            flex-grow: 1;
+            flex-basis: 150px;
+            padding: 0 10px;
+
+    }
+
+
+
+
   .footer.footer{
     height: 100%;
     background: linear-gradient(to right, rgb(116, 26, 26), rgb(17, 54, 71));
@@ -88,16 +192,31 @@ body {
   }
   
   .newsletter .newsletter-email{
-    border-radius: 30px;
-    background-color: white
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px 15px;
+    
   }
 
   .newsletter .newsletter-button{
-    border-radius: 50px;
+    border-radius: 10px;
+    padding: 5px 15px;
   }
 
   .contato{
     margin-left: 45px;
+  }
+
+  .contato i{
+    height: 10px;
+    width: 10px;
+   margin-right: 12px;
+    color: white;
+  }
+
+  .contato a{
+    text-decoration: none;
+    color: white;
   }
 
   .footer.footer .container {
@@ -112,6 +231,8 @@ body {
   }
 
   .footer h2{
+    display: flex;
+    flex-flow: row;
     color: white;
   }
 
@@ -124,9 +245,10 @@ body {
     margin-left: 30px;
   }
 
-  .redes-sociais h2{
-    margin-left: 20px;
+  .sobre-nos p{
+    text-align: justify;
   }
+  
  
   .redes-sociais .fa-facebook-f{
     height: 35px;
@@ -208,14 +330,11 @@ body {
     transform: translateY(-9px);
   }
 
-  
-
-
-
   .texto-copy{
     color: white;
     text-align: center;
     margin-bottom: 30px;
+    padding: 3rem;
   }
 
   
