@@ -1,103 +1,129 @@
 .paleta{
-        color: #741a1a;
-        color: #162735;
-        color: #e4e4e4;
-        color: #fff4be;
-        color: #804848;
+    color: #741a1a;
+    color: #162735;
+    color: #e4e4e4;
+    color: #fff4be;
+    color: #804848;
+}
+
+@keyframes slide{
+    0% {}
+    50% {}
+    100% {}
 }
 
 body{
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right, #741a1a, #162735);
 }
 
-html,body{
-    height: 100%;
+header{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: #fff4be;
 }
 
-.principal{
-   display:flex;
+.menu{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 5rem;
 }
+
+.menu input{
+    display: none;
+}
+
+.menu h1{
+    padding: 0;
+    margin: 0 1rem;
+}
+
+.log .btn-login{
+    display: none;
+}
+
 .sidebar{
+    position: absolute;
+    top: 5rem;
+    left: -1rem;
     display: flex;
     flex-flow: column;
-    width: 15%;
-    height: 100%;
-    position: fixed;
-    background-color: #741a1a;
+    align-items: center;
+    color: #fff4be;
+    max-width: 15rem;
+    max-height: 100%;
+    padding: 1rem;
+    background: linear-gradient(to right, #741a1a, #741a1a00);
+    background-size: 800%;
 }
+
+#check:checked ~ .sidebar{
+    animation: slide 1s;
+    left: -50rem;
+}
+
+.sidebar img{
+    width: 50%;
+    border-radius: 50%;
+    border: .5rem solid #fff4be;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: #fff4be;
+}
+
+.sidebar li{
+    margin-left: -1.2rem;
+    padding: 1rem;
+}
+
+.sidebar li:hover{
+    z-index: 1;
+    background-image: linear-gradient(to right, #fff4be, #fff4be00);
+    color: #741a1a;
+    border-radius: 5rem 0 0 5rem;
+
+    transition: 
+        background-image .8s,
+        color .8s;
+}
+
 .user-info{
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #e4e4e436;
 }
-.user-info h2{
-    color: #e4e4e4;
-    text-align: center;
-    margin-top: -0.5rem;
+
+.sidebar a i{
+    margin-right: .5rem;
 }
-.user-info img{
-    width: 60%;
-    border: solid 7px #e4e4e4;
-    border-radius: 50%;
-    text-align: center;
-    margin: 1rem;
-}
-.menu{
-    margin:20px 0;
-    text-align: center;
-    position: relative;
-}
-.menu li{
+
+.sidebar a li{
     list-style: none;
 }
-.menu li a:hover{
-    background-color: #e4e4e4;
-    opacity: .6;
-    color: #741a1a;
-    border-radius: 5rem 0 0 5rem;
-    padding: 0.5rem 1rem;
+
+.sidebar hr{
+    width: 100%;
+    color: #fff4be;
 }
-.menu ul li a{
+
+.content{
+    background: #e4e4e4;
     display: flex;
-    color: #e4e4e4;
-    opacity: .7;
-    font-size: 1rem;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-}
-.menu ul li a i{
-    margin-top: 0.3rem;
-    margin-right: 0.5rem;
-}
-.container{
-    position: absolute;
-    left: 12%;
-    width: 85%;
-    height: 100%;
-    color: #e4e4e4;
-    overflow-y: auto;
-    padding: 0 3%;
-}
-.info-bar{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding: 1rem;
-    border-left: 0.5px solid #e4e4e4;
-    background: linear-gradient(to right, #741a1a, #162735);
-}
-.logo-bar{
-    width: 3%;
-    border-radius: 5rem;
-    margin: 0 1rem;
-}
-.login{
-    display: none;
+    width: 100%;
+    height: 100%;
 }
