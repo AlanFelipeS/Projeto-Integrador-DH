@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 7%;
+}
+
+#subtitulo{
+    font-family: sans-serif;
+    color: white;
+    
+}
+
+fieldset{
+    border: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background: linear-gradient(to right, rgb(17, 54, 71), rgb(116, 26, 26), rgb(17, 54, 71));
+    font-family: sans-serif;
+    font-size: 1em;
+    color: white;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input, select, textarea, button{
+    border: 5px;
+}
+
+.campo{
+    margin-bottom: 1em;
+    color: white;
+    border-radius: 20px;
+}
+
+.campo label{
+    margin-bottom: .2em;
+    color: white;
+    display: block;
+    padding: .2rem;
+    border-radius: 20px;
+}
+
+fieldset.grupo .campo{
+   float: left;
+   margin-right: 1em; 
+   color: white;
+   padding: .5rem;
+}
+
+.grupo{
+    padding: .5rem;
+}
+
+.campo input[type="text"], .campo input[type= "email"], .campo select, .campo textarea{
+    padding: .2em;
+    border: 1px solid rgb(112, 53, 53);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.campo select option{
+    padding-right: 5rem;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background: #e0e0f8;
+}
+
+.botao{
+    font-size: 1em;
+    background: rgb(17, 54, 71);
+    border: 0;
+    margin-bottom: 0rem;
+    color: #ffffff;
+    padding: .2em .6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, 60%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background:#ccbbff;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+    text-decoration: none;
+}
+
+#check{
+    display: inline-block;  
+}
