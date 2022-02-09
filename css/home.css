@@ -150,32 +150,18 @@ h2 {
 
 }
 
-
-@media screen and (min-width: 800px) {
-
-    .servicos {
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            max-width: 1000px;
-            margin: 0 auto;
-    }
+.servicos h2 {
+  text-align: center;
+  width: 100%;
 
 }
 
-    .servicos h2 {
-            text-align: center;
-            width: 100%;
+.servicos div {
+  flex-grow: 1;
+  flex-basis: 150px;
+  padding: 0 10px;
 
-    }
-
-    .servicos div {
-            flex-grow: 1;
-            flex-basis: 150px;
-            padding: 0 10px;
-
-    }
-
+}
 
 
 
@@ -337,4 +323,24 @@ h2 {
     padding: 3rem;
   }
 
+  @media screen and (min-width: 768px) {
+
+    .servicos {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            max-width: 1000px;
+            margin: 0 auto;
+    }
+
+    body > header {
+      justify-content: space-around;
+    }
+
   
+  
+    body > header nav a {
+      font-size: 1rem;
+    }
+}
+
