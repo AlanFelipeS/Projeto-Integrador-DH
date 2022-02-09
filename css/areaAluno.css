@@ -43,6 +43,10 @@ header{
     display: none;
 }
 
+.menu .check:hover{
+    cursor: pointer;
+}
+
 .menu h1{
     padding: 0;
     margin: 0 1rem;
