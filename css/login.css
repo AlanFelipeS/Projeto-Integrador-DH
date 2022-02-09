@@ -3,16 +3,18 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image: linear-gradient(to right, rgb(220, 20, 47), rgb(17, 54, 71))
+    background: linear-gradient(to right, rgb(17, 54, 71), rgb(116, 26, 26), rgb(17, 54, 71));
+    
 }
 
 
-#login{
+.login{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
 }
 .card{
     background-color:linear-gradient(to right, rgb(220, 20, 47), rgb(17, 54, 71));
@@ -22,22 +24,20 @@ body{
 }
 .card header{
     padding-bottom: 50px;
-    color: white;
+ 
 }
 
 .card header ::after{
     content: "";
     width: 70px;
     height: 1px;
-    background-color: white;
     display: block;
     margin-top: 20px;
     margin-bottom: 15px;
 }
 
 .card-content label{
-color: white;
-font-size: 15px;
+font-size: 20px;
 cursor: pointer;
 }
 
@@ -45,10 +45,12 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     padding: 12px 0;
+    
+    
 }
-.card-content-input{
+.card-content input{
     margin-top: 10px;
-    font-size: 8rem;
+    font-size: 1rem;
     padding: 0 5px;
     background-color: transparent;
     border: none;
@@ -62,4 +64,17 @@ cursor: pointer;
 .card-footer{
     display: flex;
     flex-direction: column;
+    padding: 5px;
+}
+
+.card-footer .recuperar-senha{
+    border: none;
+    outline: none;
+    color: white;
+    text-decoration: none;
+
+}
+
+.card-footer a{
+    text-decoration: none;
 }
