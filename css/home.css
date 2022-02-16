@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
    
@@ -29,13 +29,15 @@ body {
   header nav {
     display: flex;
     align-items: center;
+    width: 100%;
   }
   header nav ul {
     display: flex;
-    flex-flow: row;
     padding: 0;
     margin: 0;
     list-style: none;
+    flex-flow: row wrap;
+    width: 100%;
   }
   header nav a {
     text-decoration: none;
@@ -55,7 +57,7 @@ body {
     overflow: hidden;
   }
 
-  .slides{
+  .slides {
     display: flex;
     width: 500%;
     height: 100%;
@@ -79,25 +81,6 @@ h2 {
    
 }
 
-
-/*
-.servicos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 650px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-}
-
-.servicos div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-}
-*/
 
 .container-servicos{
   display: flex;
@@ -159,39 +142,35 @@ h2 {
 .servicos div {
   flex-grow: 1;
   flex-basis: 150px;
-  padding: 0 10px;
+  padding: 0;
 
 }
 
+footer {
+  background: linear-gradient(to right, rgb(116, 26, 26), rgb(17, 54, 71));
+  position: relative;
+}
 
+.newsletter h6 {
+  color: white;
+  padding: auto;
+  margin-bottom: 10px;
+}
 
-  .footer.footer{
-    height: 100%;
-    background: linear-gradient(to right, rgb(116, 26, 26), rgb(17, 54, 71));
-    position: relative;
-  }
   
-  .newsletter h6{
-    color: white;
-    padding: auto;
-    margin-bottom: 10px;
-  }
   
-  .newsletter .newsletter-email{
-    border-radius: 10px;
-    background-color: white;
-    padding: 5px 15px;
-    
-  }
+.newsletter .newsletter-email{
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px 15px;
+}
 
   .newsletter .newsletter-button{
     border-radius: 10px;
     padding: 5px 15px;
   }
 
-  .contato{
-    margin-left: 45px;
-  }
+ 
 
   .contato i{
     height: 10px;
@@ -205,12 +184,12 @@ h2 {
     color: white;
   }
 
-  .footer.footer .container {
+  footer .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .footer.footer .container > div{
+  footer .container > div{
     flex-grow: 1;
     flex-basis: 0;
     padding: 3rem 0.9rem;
@@ -227,9 +206,7 @@ h2 {
     color: aliceblue;
   }
 
-  .footer .sobre-nos{
-    margin-left: 30px;
-  }
+ 
 
   .sobre-nos p{
     text-align: justify;
