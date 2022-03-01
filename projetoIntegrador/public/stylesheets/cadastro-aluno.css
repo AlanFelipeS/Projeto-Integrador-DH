@@ -81,24 +81,24 @@ body {
 
 
 
-  .footer.footer{
+  footer.footer{
    height: 100%;
     background: linear-gradient(to right, rgb(116, 26, 26), rgb(17, 54, 71));
     position:relative;
   }
 
-  .footer.footer .container {
+  footer.footer .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .footer.footer .container > div{
+  footer.footer .container > div{
     flex-grow: 1;
     flex-basis: 0;
     padding: 3rem 0.9rem;
   }
 
-  .footer h2{
+  footer h2{
     display: flex;
     flex-flow: row;
     color: white;
