@@ -1,8 +1,11 @@
 var createError = require('http-errors');
 var express = require('express');
+var multer = require('multer')
+const upload = multer( { dest: 'uploads/'} );
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var path = require('path');
 
 var indexRouter = require('./src/routes/index');
 var usersRouter = require('./src/routes/users');

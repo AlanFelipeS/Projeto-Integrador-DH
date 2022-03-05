@@ -10,7 +10,7 @@
       </header>
   
       <section>
-        <form>
+        <form action="/register" method="POST" enctype="multipart/form-data">
           <div class="field">
             <label for="nome">Nome e Sobrenome</label>
             <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required>
@@ -128,7 +128,7 @@
 
           <div class="field">
             <label for="foto">Escolha uma foto para o seu perfil</label>
-            <input type="file" id="foto" name="foto"  required>
+            <input type="file" id="foto" name="foto"  multiple>
           </div>
           <a href="#">
           <span></span>

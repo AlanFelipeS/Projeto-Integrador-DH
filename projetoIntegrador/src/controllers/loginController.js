@@ -1,10 +1,8 @@
-const express = require('express');
-const router = express.Router();
+const MohaveModel = require('../models/MohaveModel');
 
 const LoginController = {
-    login: (req, res) => {
+    index: (req, res) => {
         res.render('login');
     }
 }
-
 module.exports = LoginController;

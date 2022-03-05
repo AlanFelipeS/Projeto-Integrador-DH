@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/AlanFelipeS/Projeto-Integrador-DH/issues"
   },
-  "homepage": "https://github.com/AlanFelipeS/Projeto-Integrador-DH#readme"
+  "homepage": "https://github.com/AlanFelipeS/Projeto-Integrador-DH#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15",
+    "uuidv4": "^6.2.12"
+  }
 }
