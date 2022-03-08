@@ -1,7 +1,5 @@
 var createError = require('http-errors');
 var express = require('express');
-var multer = require('multer')
-const upload = multer( { dest: 'uploads/'} );
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -12,6 +10,7 @@ var usersRouter = require('./src/routes/users');
 var areaAlunoRouter = require('./src/routes/areaAluno');
 var loginRouter = require('./src/routes/login');
 var cadastroAlunoRouter = require('./src/routes/cadastroAluno');
+var servicosRouter = require('./src/routes/servicos');
 
 var app = express();
 
@@ -25,11 +24,15 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/areaAluno', areaAlunoRouter);
 app.use('/login', loginRouter);
 app.use('/cadastroAluno', cadastroAlunoRouter);
+app.use('/servicos', servicosRouter);
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

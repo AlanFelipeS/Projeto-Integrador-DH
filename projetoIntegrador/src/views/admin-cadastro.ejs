@@ -5,35 +5,36 @@
         <div class="container">
             <% if (servico) { %>
                 <h1>Editar Serviços</h1>
-            <% } %> else { %>
+            <% } else { %>
                 <h1>Cadastro de Serviços</h1>
             <% } %>
 
             <% if (servico) { %>
-            <form action="/servicos/cadastrar/<%= servico.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
-                <% } else { %>
-            <form action="/servicos/editar/<%= servico.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
-                <% } else { %>
-                    <div class="align-row form-control">
-                        <div class="field">
-                            <label for="nome">Nome do Serviço</label>
-                            <input type="text" id="nome" name="nome" value="<% if (servico) { %><%= servico.nome %><% } %>">
-                        </div>
-                        <div class="field">
-                            <label for="valor">Preço do Serviço</label>
-                            <input type="text" id="valor" name="valor" value="<% if (servico) { %><%= servico.valor %><% } %>">
-                        </div>
+            <form action="/cadastroAluno/editar/<%= servico.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+            <% } else { %>
+            <form action="/cadastroAluno/cadastro/" method="POST" enctype="multipart/form-data">
+            <% } %>
+                <div class="align-row form-control">
+                    <div class="field">
+                        <label for="nome">Nome do Serviço</label>
+                        <input type="text" id="nome" name="nome" value="<% if (servico) { %><%= servico.nome %><% } %>">
+                    </div>
+                    <div class="field">
+                        <label for="valor">Preço do Serviço</label>
+                        <input type="text" id="valor" name="valor" value="<% if (servico) { %><%= servico.valor %><% } %>">
+                    </div>
 
-                        <label for="descricao">Descrição do Serviço</label>
-                        <textarea name="descricao" id="descricao"><% if (servico) { %><%= servico.descricao %><% } %></textarea>
+                    <label for="descricao">Descrição do Serviço</label>
+                    <textarea name="descricao" id="descricao"> <% if (servico) { %><%= servico.descricao %> <% } %></textarea>
 
-                        <label for="servico-img">Imagem do Serviço</label>
-                        <input type="file"  name="servico-img" id="servico-img">
+                    <label for="servico-img">Imagem do Serviço</label>
+                    <input type="file"  name="servico-img" id="servico-img">
 
-                        <button class="btn btn-primary" type="submit">Enviar</button>
-                
-                </form>  
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+            
+            </form>  
         </div>
+        
     </section>
 </main>
 <%- include('partials/footer') %>
