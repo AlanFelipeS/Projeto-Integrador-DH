@@ -1,4 +1,4 @@
-// const UsuarioModel = require('../models/MohaveModel');
+const UsuarioModel = require('../models/UsuarioModel');
 
 const UsuarioController = {
     index: (req, res) => {
