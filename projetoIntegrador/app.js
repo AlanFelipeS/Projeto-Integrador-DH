@@ -8,12 +8,9 @@ var path = require('path');
 var indexRouter = require('./src/routes/index');
 var usersRouter = require('./src/routes/users');
 var areaAlunoRouter = require('./src/routes/areaAluno');
-<<<<<<< HEAD
 var loginRouter = require('./src/routes/login');
 var cadastroAlunoRouter = require('./src/routes/cadastroAluno');
 var servicosRouter = require('./src/routes/servicos');
-=======
->>>>>>> main
 
 var app = express();
 
@@ -29,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/cadastroUsuario', usersRouter);
 app.use('/areaAluno', areaAlunoRouter);
 app.use('/login', loginRouter);
 app.use('/cadastroAluno', cadastroAlunoRouter);
