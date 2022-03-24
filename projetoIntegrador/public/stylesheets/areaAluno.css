@@ -50,6 +50,12 @@ header{
 .menu h1{
     padding: 0;
     margin: 0 1rem;
+    
+}
+
+.menu h1 a {
+    text-decoration: none;
+    color: #fff4be;
 }
 
 .log .btn-login{
