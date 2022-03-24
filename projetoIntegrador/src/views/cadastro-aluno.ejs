@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <link rel="stylesheet"  href="/css/cadastro-aluno.css" media="">
-    <title>Mohave | Cadastro</title>
-</head>
-<body>
+<%- include('partials/header') %>
 
 
     <main>
@@ -20,7 +10,7 @@
       </header>
   
       <section>
-        <form>
+        <form action="/register" method="POST" enctype="multipart/form-data">
           <div class="field">
             <label for="nome">Nome e Sobrenome</label>
             <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required>
@@ -29,6 +19,11 @@
           <div class="field">
             <label for="email">Email</label>
             <input type="text" id="email" name="email" placeholder="exemplo@mail.com" required>
+          </div>
+
+          <div class="field">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha"  required>
           </div>
   
           <div class="field">
@@ -130,15 +125,24 @@
             <label for="menssagem">Conte um pouco sobre seus treinos, e como podemos te ajudar a melhorar sua saúde!</label>
             <textarea name="menssagem" id="menssagem" cols="20" rows="10"></textarea>
           </div>
-  
-          <button class="submit" type="submit">Enviar</button>
+
+          <div class="field">
+            <label for="foto">Escolha uma foto para o seu perfil</label>
+            <input type="file" id="foto" name="foto"  multiple>
+          </div>
+          <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <button class="submit" type="submit">Cadastrar</button>
           <button class="reset" type="reset">Limpar</button>
         </form>
+      </a>
       </section>
 
     </main>
   
      
     
-  </body>
-  </html>
+    <%- include('partials/footer') %>
