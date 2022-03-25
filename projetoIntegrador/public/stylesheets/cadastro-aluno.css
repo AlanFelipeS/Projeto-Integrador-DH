@@ -292,4 +292,14 @@ body {
     }
   }
 
+
+  .field{
+    justify-content: center;
+    color: white;
+    flex-flow: column;
+  }
+  
+  .new {
+    justify-content: center;
+    flex-flow: column;
   
