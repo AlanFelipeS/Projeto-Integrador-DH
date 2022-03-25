@@ -23,12 +23,14 @@
                         <label for="valor">Preço do Serviço</label>
                         <input type="text" id="valor" name="valor" value="<% if (servico) { %><%= servico.valor %><% } %>">
                     </div>
-
+                    <div class="new">
                     <label for="descricao">Descrição do Serviço</label>
                     <textarea name="descricao" id="descricao"> <% if (servico) { %><%= servico.descricao %> <% } %></textarea>
-
+                    </div>
+                    <div class="new">
                     <label for="servico-img">Imagem do Serviço</label>
                     <input type="file"  name="servico-img" id="servico-img">
+                    </div>
 
                     <button class="btn btn-primary" type="submit">Enviar</button>
             
