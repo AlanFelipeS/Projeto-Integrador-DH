@@ -1,0 +1,148 @@
+<%- include('partials/header') %>
+
+
+    <main>
+     
+  
+      <header>
+        <h1>Cadastro de Aluno</h1>
+      
+      </header>
+  
+      <section>
+        <form action="/register" method="POST" enctype="multipart/form-data">
+          <div class="field">
+            <label for="nome">Nome e Sobrenome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required>
+          </div>
+  
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="exemplo@mail.com" required>
+          </div>
+
+          <div class="field">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha"  required>
+          </div>
+  
+          <div class="field">
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone" placeholder="(xx) 0000-0000">
+          </div>
+  
+          
+  
+          <div class="field">
+            <label>Qual seu objetivo ao se tornar aluno da Mohave?</label>
+  
+            <div>
+              <input type="checkbox" id="peso" value="peso" name="availability">
+              <label for="peso">Perder peso</label>
+            </div>
+  
+            <div>
+              <input type="checkbox" id="resistencia" value="resistencia" name="availability">
+              <label for="resistencia">Ganhar resistência</label>
+            </div>
+  
+            <div>
+              <input type="checkbox" id="autoestima" value="autoestima" name="availability">
+              <label for="autoestima">Autoestima</label>
+            </div>
+  
+            <div>
+              <input type="checkbox" id="saude" value="saude" name="availability">
+              <label for="saude">Saúde mental</label>
+            </div>
+          </div>
+  
+  
+          <div class="field">
+            <label for="perfil">Perfil de treino</label>
+            <select name="perfil" id="perfil" name="perfil">
+              <option selected disabled>Selecione seu perfil de treino</option>
+              <option value="iniciante">Iniciante - 1 a 2 treinos por semana</option>
+              <option value="intermediario">Intermediário - 3 a 5 treinos por semana</option>
+              <option value="atleta">Atleta semi-profissional - treino todos os dias da semana</option>
+            </select>
+          </div>
+  
+          <div class="field">
+            <label>Qual a melhor forma para entrarmos em contato com você?</label>
+  
+            <div class="inline">
+              <input type="radio" id="contact-email" value="contact-email" name="contact">
+              <label for="contact-email">Email</label>
+            </div>
+  
+            <div class="inline">
+              <input type="radio" id="contact-call" value="contact-call" name="contact">
+              <label for="contact-call">Ligação</label>
+            </div>
+  
+            <div class="inline">
+              <input type="radio" id="contact-whatsapp" value="contact-whatsapp" name="contact">
+              <label for="contact-whatsapp">Whatsapp</label>
+            </div>
+          </div>
+  
+          <div class="field">
+            <label>Selecione as modalidades de seu interesse</label>
+  
+            <div>
+              <input type="checkbox" id="musculacao" value="musculacao" name="availability">
+              <label for="musculacao">Musculação</label>
+            </div>
+  
+            <div>
+              <input type="checkbox" id="crossfit" value="crossfit" name="availability">
+              <label for="crossfit">Crossfit</label>
+            </div>
+  
+            <div>
+              <input type="checkbox" id="ginastica" value="ginastica" name="availability">
+              <label for="ginastica">Ginástica</label>
+            </div>
+  
+            <div>
+              <input type="checkbox" id="luta" value="luta" name="availability">
+              <label for="luta">Luta</label>
+            </div>
+  
+            <div>
+              <input type="checkbox" id="natacao" value="natacao" name="availability">
+              <label for="natacao">Natação</label>
+            </div>
+  
+            <div>
+              <input type="checkbox" id="pilates" value="pilates" name="availability">
+              <label for="pilates">Pilates</label>
+            </div>
+          </div>
+  
+          <div class="field">
+            <label for="menssagem">Conte um pouco sobre seus treinos, e como podemos te ajudar a melhorar sua saúde!</label>
+            <textarea name="menssagem" id="menssagem" cols="20" rows="10"></textarea>
+          </div>
+
+          <div class="field">
+            <label for="foto">Escolha uma foto para o seu perfil</label>
+            <input type="file" id="foto" name="foto"  multiple>
+          </div>
+          <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <button class="submit" type="submit">Cadastrar</button>
+          <button class="reset" type="reset">Limpar</button>
+        </form>
+      </a>
+      </section>
+
+    </main>
+  
+     
+    
+    <%- include('partials/footer') %>

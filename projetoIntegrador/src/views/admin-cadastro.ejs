@@ -24,11 +24,6 @@
                         <input type="text" id="valor" name="valor" value="<% if (servico) { %><%= servico.valor %><% } %>">
                     </div>
 
-                    <label for="descricao">Descrição do Serviço</label>
-                    <textarea name="descricao" id="descricao"> <% if (servico) { %><%= servico.descricao %> <% } %></textarea>
-
-                    <label for="servico-img">Imagem do Serviço</label>
-                    <input type="file"  name="servico-img" id="servico-img">
 
                     <button class="btn btn-primary" type="submit">Enviar</button>
             
