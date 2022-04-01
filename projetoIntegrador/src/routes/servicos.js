@@ -11,7 +11,7 @@ router.post('/cadastrar', upload.single('servico-img'), ServicoController.criar)
 router.get('/', ServicoController.index);
 router.get('/admin', ServicoController.admin);
 
-//aqui tem que colocar cadastrar/:id, qdo tiver id!
+
 router.get('/editar/:id', ServicoController.editar);
 router.put('/editar/:id', upload.single('servico-img'), ServicoController.atualizar);
 
