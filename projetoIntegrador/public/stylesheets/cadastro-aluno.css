@@ -10,9 +10,27 @@ body {
   color: white;
 }
 
-body * {
-  box-sizing: border-box;
+
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  margin-left: 25%;
+  display: flex;
+  flex-flow: column;
+  row-gap: 2px;
 }
+
+.campo{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  margin-left: 25%;
+  display: flex;
+  flex-flow: column;
+  row-gap: 2px;
+}
+
+
 
 body > main {
   min-height: 300px;
@@ -353,7 +371,7 @@ footer h2{
       flex-flow: column nowrap;
       justify-content: center;
   }
-}
+
 
 
 

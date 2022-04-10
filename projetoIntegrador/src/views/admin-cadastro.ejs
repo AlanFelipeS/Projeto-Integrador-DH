@@ -16,14 +16,16 @@
             <% } %>
                 <div class="align-row form-control">
                     <div class="field">
-                        <label for="nome">Nome do Serviço</label>
-                        <input type="text" id="nome" name="nome" value="<% if (servico) { %><%= servico.nome %><% } %>">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="email" name="nome" value="<% if (servico) { %><%= servico.nome %><% } %>">
                     </div>
                     <div class="field">
-                        <label for="valor">Preço do Serviço</label>
-                        <input type="text" id="valor" name="valor" value="<% if (servico) { %><%= servico.valor %><% } %>">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="<% if (servico) { %><%= servico.email %><% } %>">
                     </div>
-
+ 
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha">
 
                     <button class="btn btn-primary" type="submit">Enviar</button>
             
