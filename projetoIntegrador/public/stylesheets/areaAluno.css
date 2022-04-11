@@ -127,8 +127,14 @@ header{
 .sidebar hr{
     width: 100%;
     color: #fff4be;
+    background-color: #fff4be;
+    border: 1px solid #fff4be;
 }
 
+.log a{
+    text-decoration: none;
+    color: #fff4be;
+}
 .content{
     background: #e4e4e4;
     display: flex;
@@ -137,3 +143,4 @@ header{
     width: 100%;
     height: 100%;
 }
+
