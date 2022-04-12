@@ -1,8 +1,8 @@
 const UsuarioModel = require('../models/UsuarioModel');
 
 const UsuarioController = {
-    index: (req, res) => {
-        res.render('cadastroUsuario');
-    }
+    form: (req, res) => {
+        return res.render('cadastroAluno');
+    },
 }
 module.exports = UsuarioController;
