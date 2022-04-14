@@ -5,4 +5,5 @@ const UsuarioController = {
         return res.render('cadastroAluno');
     },
 }
+
 module.exports = UsuarioController;

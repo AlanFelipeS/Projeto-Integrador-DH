@@ -7,3 +7,6 @@ const UsuarioController = require('../controllers/usuarioController');
 router.get('/cadastro', UsuarioController.form);
 
 module.exports = router;
+
+
+

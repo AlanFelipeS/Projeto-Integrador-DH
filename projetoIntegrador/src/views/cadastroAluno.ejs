@@ -1,6 +1,7 @@
 <%- include('partials/header') %>
 
 
+
 <main>
      
   
@@ -42,18 +43,8 @@
             <input type="checkbox" id="saude" value="saude" name="availability">
             <label for="saude">Saúde mental</label>
           </div>
-          </div>
-  
-  
-          <div class="field">
-            <label for="perfil">Perfil de treino</label>
-            <select name="perfil" id="perfil" name="perfil">
-              <option selected disabled>Selecione seu perfil de treino</option>
-              <option value="iniciante">Iniciante - 1 a 2 treinos por semana</option>
-              <option value="intermediario">Intermediário - 3 a 5 treinos por semana</option>
-              <option value="atleta">Atleta semi-profissional - treino todos os dias da semana</option>
-            </select>
-          </div>
+
+
   
           <div class="field">
             <label>Qual a melhor forma para entrarmos em contato com você?</label>
@@ -112,8 +103,43 @@
           </a>
       </section>
 
-    </main>
-  
-     
+        <fieldset class="grupo">
+          <div id="check">
+            <label><strong>Selecione as modalidades de seu interesse:</strong></label><br><br>
+            <input type="checkbox" id="musculacao" name="availability" value="musculacao">
+            <label for="musculacao"> Musculação</label>
+            <input type="checkbox" id="luta" name="luta" value="luta">
+            <label for="luta"> Luta</label>
+            <input type="checkbox" id="yoga" name="yoga" value="yoga">
+            <label for="yoga"> Yoga</label>
+            <input type="checkbox" id="spinning" name="spinning" value="spinning">
+            <label for="spinning"> Spinning</label>
+          </div>
+        </fieldset>
+
+          <div class="campo">
+        <br>
+          <label for="mensagem"><strong>Qual sua rotina de treinos atualmente? </strong></label>
+          <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+          </div>
+          <div class="alignment">
+          <div class="cadastrar">
+          <button class="botao" type="submit" onsubmit="">Cadastrar</button>
+          </div>
+
+          <div>
+          <button class="reset" type="reset">Limpar</button>
+          </div> 
+
+
+          <div class="field">
+          <label for="foto">Escolha uma foto para o seu perfil</label>
+          <input type="file" id="foto" name="foto"  multiple>
+          </div>
     
+    </form>
+
+  </body>
+
+</html>
     <%- include('partials/footer') %>
