@@ -39,7 +39,7 @@ app.use('/users', usersRouter);
 app.use('/areaAluno', areaAlunoRouter);
 app.use('/login', loginRouter);
 app.use('/cadastroAluno', cadastroAlunoRouter);
-app.use('/servicos', servicosRouter);
+
 
 
 
