@@ -19,7 +19,6 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to right, #741a1a, #162735);
 }
 
 header{
@@ -29,6 +28,7 @@ header{
     align-items: center;
     padding: 1rem;
     color: #fff4be;
+    background-image: linear-gradient(to right, #741a1a, #162735);
 }
 
 .menu{
@@ -73,7 +73,7 @@ header{
     max-width: 15rem;
     max-height: 100%;
     padding: 1rem;
-    background: linear-gradient(to right, #741a1a, #741a1a00);
+    background: #741a1a;
     background-size: 800%;
 }
 
@@ -127,8 +127,14 @@ header{
 .sidebar hr{
     width: 100%;
     color: #fff4be;
+    background-color: #fff4be;
+    border: 1px solid #fff4be;
 }
 
+.log a{
+    text-decoration: none;
+    color: #fff4be;
+}
 .content{
     background: #e4e4e4;
     display: flex;
